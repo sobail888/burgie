@@ -1,15 +1,12 @@
 # ============================================================
 #  Burgie — Menu Editor configuration (Sveltia / Decap CMS)
-#  Two things to fill in (see SETUP-CLOUDFLARE-CMS.md):
-#    1) backend.repo   -> your GitHub "owner/repo"
-#    2) backend.base_url -> your deployed sveltia-cms-auth Worker URL
 # ============================================================
 
 backend:
   name: github
-  repo: YOUR-GITHUB-USERNAME/burgie-site   # <-- CHANGE ME (e.g. burgie-leb/burgie-site)
+  repo: sobail888/burgie
   branch: main
-  base_url: https://YOUR-AUTH-WORKER.workers.dev   # <-- CHANGE ME (the auth Worker URL)
+  base_url: https://sveltia-cms-auth.yousofasktheking.workers.dev
 
 # Where uploaded photos are committed in the repo, and the URL the site uses.
 media_folder: items
@@ -17,7 +14,7 @@ public_folder: /items
 
 # Friendlier defaults
 publish_mode: simple
-site_url: https://burgie.YOURDOMAIN.com   # optional: your live site URL
+site_url: https://burgie.yousofasktheking.workers.dev
 
 # Shared fields for every menu item (YAML anchor, reused by each section below)
 item_fields: &item_fields
